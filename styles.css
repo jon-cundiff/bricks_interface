@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", cursive;
+    background-color: #b8d5b7;
+}
+
+header {
+    background: black;
+    color: #b8d5b7;
+    font-size: 24px;
+    text-align: center;
+}
+
+.game-container {
+    background: black;
+    margin: 32px;
+    width: calc(100% - 64px);
+}
+
+.game-container tr {
+    height: 25px;
+}
+
+.game-container .paddle-row {
+    height: 13px;
+}
+
+.game-container tr td:not(.empty) {
+    border-top: 1px solid rgba(210, 210, 210, 0.9);
+    border-left: 1px solid rgba(210, 210, 210, 0.9);
+    box-shadow: 2px 2px 2px rgba(10, 10, 10, 1);
+}
+
+.game-container tr td {
+    position: relative;
+    width: 8%;
+}
+
+.game-container tr.red-blocks td:not(.empty) {
+    background: #e73223;
+}
+
+.game-container tr.yellow-blocks td:not(.empty) {
+    background: #fefe55;
+}
+
+.game-container tr.green-blocks td:not(.empty) {
+    background: #316c1d;
+}
+
+.game-container tr.blue-blocks td:not(.empty) {
+    background: #1300ee;
+}
+
+.ball {
+    position: absolute;
+    background: white;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+}
+
+#ball1 {
+    top: 0;
+    left: 0;
+}
+
+#ball2 {
+    top: 0;
+    right: 0;
+}
+
+#ball3 {
+    bottom: 0;
+    right: 0;
+}
+
+.paddle {
+    background: #b8d5b7;
+}
